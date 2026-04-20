@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interpesca — Distribuïdor majorista de congelats a Andorra</title>
+  <meta name="description" content="Proveïdor majorista d'alimentació de congelats a Andorra des de 1986. Peix, carn, marisc, precuinats i més per a restaurants, hotels i empreses." />
+  <!-- Fallback web font (fins que s'integrin els fitxers de SFT Schrifted Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#inici" class="logo">
+        <img src="assets/logo-color-40.svg" alt="Interpesca · 40 anys" class="logo__img" />
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#inici">Inici</a>
+        <a href="#qui-som">Qui som</a>
+        <a href="#categories">Categories</a>
+        <a href="#solucions">Solucions</a>
+        <a href="#contacte">Contacte</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inici">
+    <video class="hero__video" autoplay muted loop playsinline>
+      <source src="assets/hero.mp4" type="video/mp4" />
+    </video>
+    <div class="hero__overlay"></div>
+    <div class="hero__vignette"></div>
+
+    <aside class="hero__side" aria-hidden="true">
+      <span class="hero__side-line"></span>
+      <span class="hero__side-text">Est. 1986 · Andorra</span>
+    </aside>
+
+    <div class="hero__content">
+      <div class="hero__accent"></div>
+      <p class="hero__eyebrow">Distribució majorista</p>
+      <p class="hero__badge">
+        <span class="hero__badge-num">40</span>
+        <span>Anys distribuint des de 1986</span>
+      </p>
+      <h1 class="hero__title">Proveïdor majorista<br>d'alimentació congelada<br><span class="hero__title-accent">a Andorra.</span></h1>
+      <div class="hero__divider"></div>
+      <p class="hero__subtitle">Congelats i productes complementaris per a restaurants, hotels i empreses. Amb el tracte directe que portem quatre dècades construint.</p>
+      <div class="hero__ctas">
+        <a href="#contacte" class="btn btn--primary">
+          Contacta'ns
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <a href="#categories" class="btn btn--ghost">Veure categories</a>
+      </div>
+    </div>
+
+    <a href="#categories" class="hero__scroll" aria-label="Desplaça't cap avall">
+      <span class="hero__scroll-text">Scroll</span>
+      <span class="hero__scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="container stats__grid">
+      <div class="stat">
+        <div class="stat__row">
+          <span class="stat__symbol">+</span><span class="stat__number" data-target="40">0</span>
+        </div>
+        <p>Anys d'experiència</p>
+      </div>
+      <div class="stat">
+        <div class="stat__row">
+          <span class="stat__symbol">+</span><span class="stat__number" data-target="500">0</span>
+        </div>
+        <p>Clients actius</p>
+      </div>
+      <div class="stat">
+        <div class="stat__row">
+          <span class="stat__symbol">+</span><span class="stat__number" data-target="500">0</span>
+        </div>
+        <p>Productes disponibles</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="categories" id="categories">
+    <div class="container">
+      <div class="categories__header reveal">
+        <div>
+          <span class="eyebrow">El nostre catàleg</span>
+          <h2 class="section-title">Una gamma completa,<br>pensada per a professionals.</h2>
+        </div>
+        <p class="categories__intro">Del peix al producte elaborat, passant per carn, marisc i postres. <strong>Nou categories</strong> que cobreixen cada necessitat del teu negoci — amb la qualitat contrastada que porta el nom Interpesca des del 1986.</p>
+      </div>
+      <div class="cat-grid reveal-stagger">
+
+        <article class="cat-card">
+          <div class="cat-card__meta">
+            <span class="cat-card__num">01 / 09</span>
+            <span class="cat-card__icon">🐟</span>
+          </div>
+          <h3>Peix</h3>
+          <p>Peix congelat amb certificació d'origen. Cadena de fred garantida de principi a fi.</p>
+          <a href="#contacte" class="cat-card__link">
+            Consultar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </article>
+
+        <article class="cat-card">
+          <div class="cat-card__meta">
+            <span class="cat-card__num">02 / 09</span>
+            <span class="cat-card__icon">🦞</span>
+          </div>
+          <h3>Marisc</h3>
+          <p>Marisc congelat d'origen seleccionat. La qualitat majorista que el teu negoci necessita.</p>
+          <a href="#contacte" class="cat-card__link">
+            Consultar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </article>
+
+        <article class="cat-card">
+          <div class="cat-card__meta">
+            <span class="cat-card__num">03 / 09</span>
+            <span class="cat-card__icon">🥩</span>
+          </div>
+          <h3>Carn</h3>
+          <p>Carn seleccionada per a professionals. Qualitat contrastada per a cuines exigents.</p>
+          <a href="#contacte" class="cat-card__link">
+            Consultar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </article>
+
+        <article class="cat-card">
+          <div class="cat-card__meta">
+            <span class="cat-card__num">04 / 09</span>
+            <span class="cat-card__icon">🍱</span>
+          </div>
+          <h3>Precuinats</h3>
+          <p>Elaborats i plats preparats. Pràctics, rendibles i de qualitat constant.</p>
+          <a href="#contacte" class="cat-card__link">
+            Consultar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </article>
+
+        <article class="cat-card">
+          <div class="cat-card__meta">
+            <span class="cat-card__num">05 / 09</span>
+            <span class="cat-card__icon">🥔</span>
+          </div>
+          <h3>Patates</h3>
+          <p>Patates preparades en múltiples formats per a tota mena de negoci.</p>
+          <a href="#contacte" class="cat-card__link">
+            Consultar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </article>
+
+        <article class="cat-card">
+          <div class="cat-card__meta">
+            <span class="cat-card__num">06 / 09</span>
+            <span class="cat-card__icon">🥦</span>
+          </div>
+          <h3>Verdures</h3>
+          <p>Verdura de temporada amb disponibilitat àmplia i servei adaptat al teu ritme.</p>
+          <a href="#contacte" class="cat-card__link">
+            Consultar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </article>
+
+        <article class="cat-card">
+          <div class="cat-card__meta">
+            <span class="cat-card__num">07 / 09</span>
+            <span class="cat-card__icon">❄️</span>
+          </div>
+          <h3>Gelats</h3>
+          <p>Àmplia gamma de gelats i postres per a restauració i hostaleria.</p>
+          <a href="#contacte" class="cat-card__link">
+            Consultar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </article>
+
+        <article class="cat-card">
+          <div class="cat-card__meta">
+            <span class="cat-card__num">08 / 09</span>
+            <span class="cat-card__icon">🍰</span>
+          </div>
+          <h3>Dolços</h3>
+          <p>Postres, rebosteria i productes dolços per completar la teva oferta.</p>
+          <a href="#contacte" class="cat-card__link">
+            Consultar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </article>
+
+        <article class="cat-card">
+          <div class="cat-card__meta">
+            <span class="cat-card__num">09 / 09</span>
+            <span class="cat-card__icon">🛒</span>
+          </div>
+          <h3>Varis</h3>
+          <p>Conserves, olis, salses, condiments i productes de suport per a la teva cuina.</p>
+          <a href="#contacte" class="cat-card__link">
+            Consultar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- QUI SOM -->
+  <section class="qui-som" id="qui-som">
+    <div class="container">
+
+      <div class="qui-som__header reveal">
+        <span class="eyebrow">Qui som</span>
+        <h2 class="section-title">Una història familiar<br>de quatre dècades a Andorra.</h2>
+        <p class="qui-som__lead">Interpesca és la història d'una família que, des del 1986, ha construït un projecte basat en la feina ben feta, la proximitat i el compromís amb cada client.</p>
+      </div>
+
+      <div class="qui-som__body reveal">
+
+        <div class="qui-som__story">
+          <p>Els nostres pares van posar en marxa Interpesca amb recursos limitats però amb una gran determinació. Durant anys van construir el negoci dia a dia, client a client, guanyant-se la confiança del sector amb sacrifici i proximitat.</p>
+          <p>Avui, la segona generació continuem el projecte amb orgull i responsabilitat. Hem crescut, ens hem professionalitzat i ens hem adaptat als nous temps, però sense perdre mai l'essència: ser una empresa <strong>propera, fiable i compromesa</strong>.</p>
+          <p class="qui-som__claim">Preservant l'essència, compartint el llegat.</p>
+        </div>
+
+        <div class="qui-som__image">
+          <img src="assets/logo-segell.svg" alt="Segell Interpesca" class="qui-som__segell" />
+          <div class="qui-som__badge-40">
+            <span class="qui-som__badge-num">40</span>
+            <span class="qui-som__badge-text">anys<br>1986 · 2026</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- TIMELINE -->
+      <div class="timeline reveal-stagger">
+        <div class="timeline__item">
+          <div class="timeline__year">1986</div>
+          <h4>Els orígens</h4>
+          <p>Naixement d'Interpesca a Andorra com a negoci familiar de distribució de congelats.</p>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__year">90s–00s</div>
+          <h4>Consolidació</h4>
+          <p>Creixement sostingut client a client. Ens consolidem com a referent del canal HORECA andorrà.</p>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__year">Avui</div>
+          <h4>Segona generació</h4>
+          <p>Modernització, professionalització i integració al Grup Anedilco — 250M€ al darrere.</p>
+        </div>
+        <div class="timeline__item timeline__item--highlight">
+          <div class="timeline__year">2026</div>
+          <h4>40 anys</h4>
+          <p>Quatre dècades de confiança. La mateixa il·lusió que el primer dia.</p>
+        </div>
+      </div>
+
+      <!-- PILARS -->
+      <div class="pilars reveal-stagger">
+        <div class="pilar">
+          <span class="pilar__icon">📍</span>
+          <h4>Fundats a Andorra el 1986</h4>
+          <p>40 anys de trajectòria ininterrompuda.</p>
+        </div>
+        <div class="pilar">
+          <span class="pilar__icon">🤝</span>
+          <h4>Grup Anedilco</h4>
+          <p>Suport d'un grup de 250M€ amb la proximitat d'una família.</p>
+        </div>
+        <div class="pilar">
+          <span class="pilar__icon">❄️</span>
+          <h4>Cadena de fred certificada</h4>
+          <p>Traçabilitat garantida en tot el procés de distribució.</p>
+        </div>
+        <div class="pilar">
+          <span class="pilar__icon">⭐</span>
+          <h4>Qualitat i preu just</h4>
+          <p>No ens conformem amb barat. Triem bé, sempre.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SOLUCIONS PER A EMPRESES -->
+  <section class="solucions" id="solucions">
+    <div class="container">
+      <div class="solucions__header reveal">
+        <span class="eyebrow">Per a qui treballem</span>
+        <h2 class="section-title">Distribució alimentària<br>professional a Andorra.</h2>
+        <p class="section-sub">Portem 40 anys treballant colze a colze amb els millors negocis d'Andorra. Sabem el que necessites perquè ho hem vist de prop, cada dia.</p>
+      </div>
+      <div class="sol-grid reveal-stagger">
+
+        <article class="sol-card" data-num="01">
+          <div class="sol-card__head">
+            <div class="sol-card__icon">🍽️</div>
+            <h3>Restauració i hostaleria</h3>
+          </div>
+          <p class="sol-card__desc">Restaurants, hotels i càterings d'Andorra. Producte diari adaptat al ritme exigent d'una cuina professional, amb la fiabilitat que la teva sala mereix.</p>
+          <ul class="sol-card__list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Entregues adaptades al teu ritme</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Producte de qualitat constant</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Assessorament directe del nostre equip</li>
+          </ul>
+        </article>
+
+        <article class="sol-card" data-num="02">
+          <div class="sol-card__head">
+            <div class="sol-card__icon">🏥</div>
+            <h3>Col·lectivitats i serveis públics</h3>
+          </div>
+          <p class="sol-card__desc">Hospitals, residències, escoles i institucions. Volum constant, varietat i la tranquil·litat d'una documentació sanitària sempre en ordre.</p>
+          <ul class="sol-card__list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Capacitat per a comandes de volum</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Traçabilitat i documentació completa</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Cadena de fred certificada</li>
+          </ul>
+        </article>
+
+        <article class="sol-card" data-num="03">
+          <div class="sol-card__head">
+            <div class="sol-card__icon">🛒</div>
+            <h3>Comerç i peixateries</h3>
+          </div>
+          <p class="sol-card__desc">Botigues de proximitat, peixateries i comerç de barri. Qualitat majorista i condicions adaptades al petit comerç andorrà, sense lletra petita.</p>
+          <ul class="sol-card__list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Gamma amplia i flexible</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Preu just, qualitat majorista</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Tracte directe i de proximitat</li>
+          </ul>
+        </article>
+
+        <article class="sol-card" data-num="04">
+          <div class="sol-card__head">
+            <div class="sol-card__icon">🏢</div>
+            <h3>Distribuïdors i operadors</h3>
+          </div>
+          <p class="sol-card__desc">Empreses que necessiten un majorista sòlid i ben connectat. Tens al darrere el Grup Anedilco — 250M€ en xarxa, volum i garantia de subministrament.</p>
+          <ul class="sol-card__list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Suport del Grup Anedilco (250M€)</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Capacitat de volum sostinguda</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Acords comercials a mida</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTE -->
+  <section class="contacte" id="contacte">
+    <div class="container contacte__inner">
+
+      <div class="contacte__form-col reveal">
+        <h2 class="section-title contacte__title">Parlem? Contacta amb Interpesca</h2>
+        <p class="contacte__intro">Si tens qualsevol dubte sobre la nostra oferta, vols consultar disponibilitat o simplement vols saber si Interpesca encaixa amb el que necessites, estàs a un pas de rebre resposta.</p>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <input type="text" placeholder="Nom i cognoms *" required />
+            <input type="text" placeholder="Empresa o negoci (opcional)" />
+          </div>
+          <div class="form-row">
+            <input type="tel" placeholder="Telèfon *" required />
+            <input type="email" placeholder="Correu electrònic" />
+          </div>
+          <select required>
+            <option value="" disabled selected>Tipus de negoci *</option>
+            <option>Restauració</option>
+            <option>Hotel</option>
+            <option>Col·lectivitat</option>
+            <option>Comerç</option>
+            <option>Altres</option>
+          </select>
+          <textarea rows="4" placeholder="Missatge / Quines categories t'interessen?"></textarea>
+          <label class="privacy-check">
+            <input type="checkbox" required />
+            <span>He llegit i accepto la <a href="#" class="privacy-link">política de privacitat</a></span>
+          </label>
+          <button type="submit" class="btn btn--primary btn--large">Enviar consulta</button>
+        </form>
+      </div>
+
+      <div class="contacte__info-col reveal">
+        <h3 class="contacte__info-title">Contacte directe</h3>
+        <ul class="contact-info">
+          <li><span>📍</span><span>[Adreça — pendent del client]</span></li>
+          <li><span>📞</span><span>[Telèfon — pendent del client]</span></li>
+          <li><span>💬</span><span>[WhatsApp — pendent del client]</span></li>
+          <li><span>✉️</span><span>[Correu — pendent del client]</span></li>
+          <li><span>🕐</span><span>[Horari — pendent del client]</span></li>
+        </ul>
+        <a href="https://wa.me/376000000" class="btn btn--whatsapp" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Escriu-nos per WhatsApp
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container faq__inner">
+      <h2 class="section-title section-title--accent reveal">Preguntes habituals</h2>
+      <div class="faq-list reveal-stagger">
+
+        <div class="faq-item">
+          <button class="faq-q">
+            Treballeu únicament amb empreses o també amb particulars?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Interpesca és un distribuïdor orientat al canal B2B: restaurants, hotels, col·lectivitats, comerços i empreses. Tot i que disposem d'un servei de venda directa a particulars.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            Hi ha un mínim de comanda per treballar amb vosaltres?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Treballem amb flexibilitat. Adaptem les comandes a les necessitats de cada tipus de negoci. Posa't en contacte amb nosaltres per valorar junts el millor format de col·laboració.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            Feu distribució a tot Andorra?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Sí. Distribuïm en tot el territori andorrà. Si tens dubtes sobre la cobertura al teu emplaçament concret, consulta'ns directament.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            Quins productes distribuïu?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>La nostra oferta inclou peix i marisc, carn i aviram, congelats, fruita i verdura, làctics i productes complementaris. Consulta la secció de categories per a més detall, o contacta amb nosaltres si cerques alguna referència concreta.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            Com puc fer una primera consulta?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Pots escriure'ns pel formulari de contacte d'aquesta mateixa pàgina, enviar-nos un WhatsApp o trucar-nos directament. T'atendrem sense compromís.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            Disposeu de documentació sanitària i de traçabilitat?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Sí. Treballem amb tots els estàndards de seguretat alimentària exigits per la normativa vigent.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MAPA -->
+  <section class="mapa" id="mapa" aria-label="Ubicació Interpesca">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2961.5!2d1.5043486!3d42.499599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a5f501d8cc6fc7%3A0xad22192b7cf66878!2sInterpesca!5e0!3m2!1sca!2sad!4v1713600000000"
+      width="100%" height="100%" style="border:0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__grid">
+
+      <div class="footer__brand">
+        <img src="assets/logo-white-40.svg" alt="Interpesca · 40 anys" class="footer__logo" />
+        <p>Proveïdor majorista d'alimentació fresca i congelada a Andorra des de 1986.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#categories">Categories de producte</a></li>
+          <li><a href="#qui-som">Qui som?</a></li>
+          <li><a href="#solucions">Distribució per a empreses</a></li>
+          <li><a href="#contacte">Contacte</a></li>
+          <li><a href="#faq">Preguntes freqüents</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contacte</h4>
+        <ul class="contact-info contact-info--footer">
+          <li><span>📍</span><span>[Adreça pendent]</span></li>
+          <li><span>📞</span><span>[Telèfon pendent]</span></li>
+          <li><span>✉️</span><span>[Correu pendent]</span></li>
+          <li><span>🕐</span><span>[Horari pendent]</span></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Xarxes socials</h4>
+        <ul class="social-links">
+          <li><a href="#">📷 Instagram</a></li>
+          <li><a href="#">📘 Facebook</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>© 2026 Interpesca. Tots els drets reservats. · <a href="#">Protecció de dades</a></p>
+        <p>Lloc web creat amb ❤️ per <a href="#">Bitanube</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOTANT -->
+  <a href="https://wa.me/376000000" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Escriu-nos per WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">Gràcies pel teu missatge. Ens posarem en contacte amb tu en el menor temps possible.</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
