@@ -192,7 +192,7 @@ a { text-decoration: none; color: inherit; }
   display: inline-flex; align-items: center; gap: .55rem;
   background: rgba(0,0,0,.35); color: #fff;
   border: 1px solid rgba(0,178,227,.6); border-radius: 50px;
-  padding: .4rem 1.15rem .4rem .45rem; font-size: clamp(.82rem, .95vw, .92rem); font-weight: 600;
+  padding: .4rem .75rem; font-size: clamp(.82rem, .95vw, .92rem); font-weight: 600;
   margin-bottom: clamp(1.25rem, 2.2vw, 2rem); backdrop-filter: blur(10px);
   letter-spacing: .01em;
 }
