@@ -1,0 +1,52 @@
+# Interpesca — robots.txt
+# https://www.interpesca.ad
+
+User-agent: *
+Allow: /
+Disallow: /assets/hero.mp4
+Disallow: /*.json$
+
+# Motors de cerca principals
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Bots d'IA — permetem indexació
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Bots d'scraping agressius — bloquejats
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Sitemap
+Sitemap: https://www.interpesca.ad/sitemap.xml
+
+# Host preferit
+Host: https://www.interpesca.ad
