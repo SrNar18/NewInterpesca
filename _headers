@@ -1,0 +1,97 @@
+# Interpesca — HTTP Headers
+# Format compatible amb Cloudflare Pages i Netlify
+# Cache de 2 mesos (5184000 s) per a recursos estàtics
+
+# =========================================
+# GLOBAL — Seguretat aplicada a tot el lloc
+# =========================================
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  X-XSS-Protection: 1; mode=block
+
+# =========================================
+# HTML — Cache curt (es revalida sovint)
+# =========================================
+/
+  Cache-Control: public, max-age=3600, must-revalidate
+/*.html
+  Cache-Control: public, max-age=3600, must-revalidate
+/index.html
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# =========================================
+# CSS i JavaScript — Cache 2 mesos
+# =========================================
+/*.css
+  Cache-Control: public, max-age=5184000, immutable
+/*.js
+  Cache-Control: public, max-age=5184000, immutable
+
+# =========================================
+# Fonts — Cache 2 mesos + CORS
+# =========================================
+/*.woff2
+  Cache-Control: public, max-age=5184000, immutable
+  Access-Control-Allow-Origin: *
+/*.woff
+  Cache-Control: public, max-age=5184000, immutable
+  Access-Control-Allow-Origin: *
+/*.ttf
+  Cache-Control: public, max-age=5184000, immutable
+  Access-Control-Allow-Origin: *
+/fonts/*
+  Cache-Control: public, max-age=5184000, immutable
+  Access-Control-Allow-Origin: *
+
+# =========================================
+# Imatges — Cache 2 mesos
+# =========================================
+/*.svg
+  Cache-Control: public, max-age=5184000, immutable
+/*.png
+  Cache-Control: public, max-age=5184000, immutable
+/*.jpg
+  Cache-Control: public, max-age=5184000, immutable
+/*.jpeg
+  Cache-Control: public, max-age=5184000, immutable
+/*.webp
+  Cache-Control: public, max-age=5184000, immutable
+/*.avif
+  Cache-Control: public, max-age=5184000, immutable
+/*.ico
+  Cache-Control: public, max-age=5184000, immutable
+/*.gif
+  Cache-Control: public, max-age=5184000, immutable
+
+# =========================================
+# Vídeo i àudio — Cache 2 mesos
+# =========================================
+/*.mp4
+  Cache-Control: public, max-age=5184000, immutable
+/*.webm
+  Cache-Control: public, max-age=5184000, immutable
+/*.mp3
+  Cache-Control: public, max-age=5184000, immutable
+
+# =========================================
+# Arxius d'assets (subcarpeta)
+# =========================================
+/assets/*
+  Cache-Control: public, max-age=5184000, immutable
+
+# =========================================
+# SEO — robots, sitemap, manifest
+# =========================================
+/robots.txt
+  Cache-Control: public, max-age=86400
+  Content-Type: text/plain; charset=utf-8
+/sitemap.xml
+  Cache-Control: public, max-age=86400
+  Content-Type: application/xml; charset=utf-8
+/manifest.webmanifest
+  Cache-Control: public, max-age=604800
+  Content-Type: application/manifest+json

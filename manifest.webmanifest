@@ -1,0 +1,28 @@
+{
+  "name": "Interpesca — Distribuïdor majorista a Andorra",
+  "short_name": "Interpesca",
+  "description": "Proveïdor majorista d'alimentació congelada a Andorra des de 1986.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#00758d",
+  "lang": "ca",
+  "dir": "ltr",
+  "categories": ["business", "food", "shopping"],
+  "icons": [
+    {
+      "src": "assets/logo-segell.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/logo-color-40.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
