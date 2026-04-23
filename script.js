@@ -1,3 +1,10 @@
+// ===== BACK TO TOP =====
+const backTop = document.getElementById('backTop');
+window.addEventListener('scroll', () => {
+  backTop.classList.toggle('visible', window.scrollY > 400);
+});
+backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
 // ===== HAMBURGER MENU =====
 const hamburger = document.getElementById('hamburger');
 const nav = document.getElementById('nav');
