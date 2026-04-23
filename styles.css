@@ -1,40 +1,7 @@
-/* ===== FONT: SFT Schrifted Sans ===== */
-/* Col·loca els fitxers .woff2 a la carpeta fonts/ */
-@font-face {
-  font-family: 'SFT Schrifted Sans';
-  src: url('fonts/SFTSchriftedSans-Regular.woff2') format('woff2'),
-       url('fonts/SFTSchriftedSans-Regular.woff') format('woff');
-  font-weight: 400; font-style: normal; font-display: swap;
-}
-@font-face {
-  font-family: 'SFT Schrifted Sans';
-  src: url('fonts/SFTSchriftedSans-Medium.woff2') format('woff2'),
-       url('fonts/SFTSchriftedSans-Medium.woff') format('woff');
-  font-weight: 500; font-style: normal; font-display: swap;
-}
-@font-face {
-  font-family: 'SFT Schrifted Sans';
-  src: url('fonts/SFTSchriftedSans-SemiBold.woff2') format('woff2'),
-       url('fonts/SFTSchriftedSans-SemiBold.woff') format('woff');
-  font-weight: 600; font-style: normal; font-display: swap;
-}
-@font-face {
-  font-family: 'SFT Schrifted Sans';
-  src: url('fonts/SFTSchriftedSans-Bold.woff2') format('woff2'),
-       url('fonts/SFTSchriftedSans-Bold.woff') format('woff');
-  font-weight: 700; font-style: normal; font-display: swap;
-}
-@font-face {
-  font-family: 'SFT Schrifted Sans';
-  src: url('fonts/SFTSchriftedSans-ExtraBold.woff2') format('woff2'),
-       url('fonts/SFTSchriftedSans-ExtraBold.woff') format('woff');
-  font-weight: 800; font-style: normal; font-display: swap;
-}
-
 /* ===== RESET & BASE ===== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
-body { font-family: 'SFT Schrifted Sans', 'Inter', system-ui, sans-serif; color: #1a1a1a; background: #fff; }
+body { font-family: 'DM Sans', system-ui, sans-serif; color: #1a1a1a; background: #fff; }
 img { max-width: 100%; }
 a { text-decoration: none; color: inherit; }
 
