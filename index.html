@@ -11,7 +11,7 @@
 
   <!-- ===== SEO principal ===== -->
   <title>Interpesca · Majorista de congelats a Andorra des de 1986</title>
-  <meta name="description" content="Majorista d'alimentació congelada a Andorra des de 1986. Peix, marisc, carn, precuinats i més per a restaurants, hotels i col·lectivitats. 40 anys de confiança." />
+  <meta name="description" content="Distribuïdor majorista de congelats a Andorra des de 1986. Peix, marisc, carn i precuinats per a restaurants, hotels i col·lectivitats HORECA. 40 anys." />
   <meta name="keywords" content="Interpesca, distribuïdor Andorra, majorista congelats Andorra, proveïdor alimentari Andorra, peix congelat Andorra, marisc Andorra, carn congelada Andorra, precuinats Andorra, HORECA Andorra, Grup Anedilco" />
   <meta name="author" content="Interpesca SL" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -72,6 +72,9 @@
 
   <!-- ===== Sitemap ===== -->
   <link rel="sitemap" type="application/xml" title="Sitemap Interpesca" href="/sitemap.xml" />
+
+  <!-- ===== LLMs.txt (AI indexing) ===== -->
+  <link rel="llms" type="text/plain" title="LLMs.txt Interpesca" href="/llms.txt" />
 
   <!-- ===== Structured Data — LocalBusiness / Organization ===== -->
   <script type="application/ld+json">
@@ -178,7 +181,7 @@
             "name": "Hi ha un mínim de comanda per treballar amb vosaltres?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Treballem amb flexibilitat. Adaptem les comandes a les necessitats de cada tipus de negoci."
+              "text": "Treballem amb flexibilitat. Adaptem les comandes a les necessitats de cada tipus de negoci. Posa't en contacte amb nosaltres per valorar junts el millor format de col·laboració."
             }
           },
           {
@@ -186,7 +189,7 @@
             "name": "Feu distribució a tot Andorra?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sí. Distribuïm en tot el territori andorrà."
+              "text": "Sí. Distribuïm en tot el territori andorrà. Si tens dubtes sobre la cobertura al teu emplaçament concret, consulta'ns directament."
             }
           },
           {
@@ -194,7 +197,15 @@
             "name": "Quins productes distribuïu?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Peix i marisc, carn i aviram, congelats, fruita i verdura, làctics i productes complementaris."
+              "text": "La nostra oferta inclou peix i marisc, carn i aviram, congelats, fruita i verdura, làctics i productes complementaris. Consulta la secció de categories per a més detall, o contacta amb nosaltres si cerques alguna referència concreta."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Com puc fer una primera consulta?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pots escriure'ns pel formulari de contacte d'aquesta mateixa pàgina, enviar-nos un WhatsApp o trucar-nos directament. T'atendrem sense compromís."
             }
           },
           {
@@ -236,7 +247,9 @@
 
   <!-- HERO -->
   <section class="hero" id="inici">
-    <video class="hero__video" autoplay muted loop playsinline>
+    <video class="hero__video" autoplay muted loop playsinline
+           aria-hidden="true" role="presentation"
+           title="Vídeo de fons decoratiu — Interpesca distribuïdor majorista a Andorra">
       <source src="assets/hero.mp4" type="video/mp4" />
     </video>
     <div class="hero__overlay"></div>
@@ -276,24 +289,24 @@
     <div class="container stats__grid">
       <div class="stat">
         <div class="stat__row">
-          <span class="stat__symbol">+</span><span class="stat__number" data-target="40">0</span>
+          <span class="stat__symbol">+</span><span class="stat__number" data-target="40">40</span>
         </div>
         <p>Anys d'experiència</p>
       </div>
       <div class="stat">
         <div class="stat__row">
-          <span class="stat__symbol">+</span><span class="stat__number" data-target="500">0</span>
+          <span class="stat__symbol">+</span><span class="stat__number" data-target="500">500</span>
         </div>
         <p>Clients actius</p>
       </div>
       <div class="stat">
         <div class="stat__row">
-          <span class="stat__symbol">+</span><span class="stat__number" data-target="500">0</span>
+          <span class="stat__symbol">+</span><span class="stat__number" data-target="500">500</span>
         </div>
         <p>Productes disponibles</p>
       </div>
     </div>
-    <img src="assets/marca-blob.svg" alt="" class="stats__stamp" aria-hidden="true" />
+    <img src="assets/marca-blob.svg" alt="" class="stats__stamp" aria-hidden="true" loading="lazy" />
   </section>
 
   <!-- CATEGORIES -->
@@ -595,26 +608,48 @@
         <p class="contacte__intro">Si tens qualsevol dubte sobre la nostra oferta, vols consultar disponibilitat o simplement vols saber si Interpesca encaixa amb el que necessites, estàs a un pas de rebre resposta.</p>
         <form class="contact-form" id="contactForm" method="POST" action="#" aria-label="Formulari de contacte amb Interpesca" novalidate>
           <div class="form-row">
-            <input type="text" name="nom" id="f-nom" placeholder="Nom i cognoms *" title="Escriu el teu nom i cognoms" autocomplete="name" required aria-required="true" />
-            <input type="text" name="empresa" id="f-empresa" placeholder="Empresa o negoci (opcional)" title="Nom de la teva empresa o negoci" autocomplete="organization" />
+            <div class="field-wrap">
+              <input type="text" name="nom" id="f-nom" placeholder="Nom i cognoms *" title="Escriu el teu nom i cognoms" autocomplete="name" required aria-required="true" />
+            </div>
+            <div class="field-wrap">
+              <input type="text" name="empresa" id="f-empresa" placeholder="Empresa o negoci (opcional)" title="Nom de la teva empresa o negoci" autocomplete="organization" />
+            </div>
           </div>
           <div class="form-row">
-            <input type="tel" name="telefon" id="f-telefon" placeholder="Telèfon *" title="Número de telèfon de contacte" autocomplete="tel" inputmode="tel" required aria-required="true" />
-            <input type="email" name="email" id="f-email" placeholder="Correu electrònic" title="El teu correu electrònic" autocomplete="email" inputmode="email" />
+            <div class="field-wrap">
+              <input type="tel" name="telefon" id="f-telefon" placeholder="Telèfon *" title="Número de telèfon de contacte" autocomplete="tel" inputmode="tel" required aria-required="true" />
+            </div>
+            <div class="field-wrap">
+              <input type="email" name="email" id="f-email" placeholder="Correu electrònic" title="El teu correu electrònic" autocomplete="email" inputmode="email" />
+            </div>
           </div>
-          <select name="tipus" id="f-tipus" title="Selecciona el tipus de negoci" required aria-required="true">
-            <option value="" disabled selected>Tipus de negoci *</option>
-            <option value="restauracio">Restauració</option>
-            <option value="hotel">Hotel</option>
-            <option value="collectivitat">Col·lectivitat</option>
-            <option value="comerc">Comerç</option>
-            <option value="altres">Altres</option>
-          </select>
-          <textarea name="missatge" id="f-missatge" rows="4" placeholder="Missatge / Quines categories t'interessen?" title="Escriu el teu missatge o dubte"></textarea>
-          <label class="privacy-check" for="f-privacy">
-            <input type="checkbox" name="privacitat" id="f-privacy" required aria-required="true" />
-            <span>He llegit i accepto la <a href="#" class="privacy-link" title="Llegir la política de privacitat">política de privacitat</a></span>
-          </label>
+          <div class="field-wrap">
+            <select name="tipus" id="f-tipus" title="Selecciona el tipus de negoci" required aria-required="true">
+              <option value="" disabled selected>Tipus de negoci *</option>
+              <option value="restauracio">Restauració</option>
+              <option value="hotel">Hotel</option>
+              <option value="collectivitat">Col·lectivitat</option>
+              <option value="comerc">Comerç</option>
+              <option value="altres">Altres</option>
+            </select>
+          </div>
+          <div class="field-wrap">
+            <textarea name="missatge" id="f-missatge" rows="4" placeholder="Missatge / Quines categories t'interessen?" title="Escriu el teu missatge o dubte"></textarea>
+          </div>
+          <div class="field-wrap" id="privacy-wrap">
+            <label class="privacy-check" for="f-privacy">
+              <input type="checkbox" name="privacitat" id="f-privacy" required aria-required="true" />
+              <span>He llegit i accepto la <a href="#" class="privacy-link" title="Llegir la política de protecció de dades">Protecció de Dades</a> *</span>
+            </label>
+            <span class="field-error-msg" id="privacy-error" role="alert"></span>
+          </div>
+          <div class="field-wrap" id="consent-wrap">
+            <label class="privacy-check" for="f-consent">
+              <input type="checkbox" name="consentiment" id="f-consent" required aria-required="true" />
+              <span>Dono el meu consentiment perquè aquest lloc web emmagatzemi la meva informació enviada perquè puguin respondre a la meva consulta *</span>
+            </label>
+            <span class="field-error-msg" id="consent-error" role="alert"></span>
+          </div>
           <button type="submit" class="btn btn--primary btn--large" title="Enviar la consulta a Interpesca">Enviar consulta</button>
         </form>
       </div>
@@ -722,7 +757,7 @@
     <div class="container footer__grid">
 
       <div class="footer__brand">
-        <img src="assets/logo-footer.svg" alt="Logotip Interpesca blanc" class="footer__logo" width="160" height="32" />
+        <img src="assets/logo-footer.svg" alt="Logotip Interpesca blanc" class="footer__logo" width="160" height="32" loading="lazy" />
         <p>Proveïdor majorista d'alimentació fresca i congelada a Andorra des de 1986.</p>
       </div>
 

@@ -395,7 +395,7 @@ a { text-decoration: none; color: inherit; }
 /* ===== QUI SOM ===== */
 .qui-som {
   padding: 7rem 0;
-  background: linear-gradient(160deg, #073d4a 0%, #052830 45%, #031e25 100%);
+  background: linear-gradient(160deg, #0d5568 0%, #052830 50%, #020f14 100%);
   position: relative; overflow: hidden;
 }
 .qui-som::before {
@@ -626,6 +626,26 @@ a { text-decoration: none; color: inherit; }
 .contact-form select:focus,
 .contact-form textarea:focus { box-shadow: 0 0 0 3px rgba(0,178,227,.4); }
 .contact-form textarea { resize: vertical; }
+
+/* ── Validació: estats d'error ── */
+.field-wrap { display: flex; flex-direction: column; gap: .3rem; }
+.contact-form input.input-error,
+.contact-form select.input-error,
+.contact-form textarea.input-error {
+  box-shadow: 0 0 0 2px #e74c3c;
+  background: #fff8f8;
+}
+.contact-form input.input-ok,
+.contact-form select.input-ok,
+.contact-form textarea.input-ok {
+  box-shadow: 0 0 0 2px #27ae60;
+}
+.field-error-msg {
+  font-size: .78rem; color: #ff6b6b; font-weight: 500;
+  padding-left: .25rem; display: none;
+}
+.field-error-msg.visible { display: block; }
+.privacy-check.input-error { color: #ff6b6b; }
 .privacy-check {
   display: flex; align-items: flex-start; gap: .75rem;
   color: rgba(255,255,255,.78); font-size: .88rem; cursor: pointer; line-height: 1.5;
@@ -765,6 +785,7 @@ a { text-decoration: none; color: inherit; }
   .contacte__inner { grid-template-columns: 1fr; gap: 3rem; }
 }
 @media (max-width: 640px) {
+  /* ── Nav ── */
   .nav {
     display: none; flex-direction: column; position: absolute;
     top: 70px; left: 0; right: 0; background: #fff;
@@ -773,19 +794,72 @@ a { text-decoration: none; color: inherit; }
   }
   .nav.open { display: flex; }
   .hamburger { display: flex; }
-  .hero__content { margin-left: 1.25rem; padding-right: 1.25rem; }
+
+  /* ── Hero: centrat ── */
+  .hero { align-items: center; padding-bottom: 8vh; }
+  .hero__content {
+    margin-left: 1.25rem; padding-right: 1.25rem;
+    text-align: center; display: flex; flex-direction: column; align-items: center;
+  }
+  .hero__accent { margin-left: auto; margin-right: auto; }
+  .hero__divider { margin-left: auto; margin-right: auto; }
+  .hero__badge { align-self: center; }
   .hero__title { font-size: clamp(1.4rem, 6.5vw, 2rem); }
-  .hero__subtitle { font-size: 1rem; max-width: 100%; }
+  .hero__subtitle { font-size: 1rem; max-width: 100%; text-align: center; }
   .hero__ctas { flex-direction: column; align-items: stretch; width: 100%; }
   .hero__ctas .btn { width: 100%; }
+
+  /* ── Utilitats de secció: centrades ── */
+  .section-title--accent::before { margin-left: auto; margin-right: auto; }
+  .section-sub { text-align: center; max-width: 100%; }
+  .eyebrow { text-align: center; }
+
+  /* ── Stats ── */
+  .stats__grid { grid-template-columns: repeat(3, 1fr); gap: .75rem; }
+  .stat__number { font-size: 1.8rem; }
+  .stat__symbol { font-size: 1.4rem; }
+  .stat p { font-size: .68rem; letter-spacing: .08em; margin-top: .4rem; }
+
+  /* ── Categories ── */
   .cat-grid { grid-template-columns: 1fr; }
-  .form-row { grid-template-columns: 1fr; }
-  .stats__grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .categories__header { text-align: center; }
+  .categories__header .section-title { text-align: center; }
+  .categories__intro { justify-self: center; text-align: center; }
+
+  /* ── Qui som ── */
   .timeline { grid-template-columns: 1fr; }
   .pilars { grid-template-columns: 1fr; }
   .qui-som__badge-40 { width: 90px; height: 90px; bottom: -14px; right: -14px; }
   .qui-som__badge-num { font-size: 1.8rem; }
-  .footer__grid { grid-template-columns: 1fr; gap: 2rem; }
+  .qui-som__body { text-align: center; }
+  .qui-som__subsection-title { justify-content: center; }
+  .qui-som__list li { justify-content: center; }
+
+  /* ── Solucions ── */
+  .sol-card { text-align: center; }
+  .sol-card__list li { justify-content: center; }
+
+  /* ── Contacte ── */
+  .contact-info { text-align: center; }
+  .contact-info li { justify-content: center; }
+
+  /* ── FAQ ── */
+  .faq__inner { text-align: center; }
+  .faq__btn { text-align: left; }
+
+  /* ── Formulari ── */
+  .form-row { grid-template-columns: 1fr; }
+
+  /* ── Footer ── */
+  .footer__grid { grid-template-columns: 1fr; gap: 2rem; text-align: center; }
   .footer__bottom-inner { flex-direction: column; text-align: center; }
+  .footer__links { align-items: center; }
+
+  /* ── Flotants ── */
   .whatsapp-float { bottom: 1.25rem; right: 1.25rem; }
+  .back-top {
+    right: 50%; transform: translateX(50%) translateY(10px);
+    bottom: 5.5rem;
+  }
+  .back-top.visible { transform: translateX(50%) translateY(0); }
 }
