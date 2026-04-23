@@ -386,7 +386,11 @@ a { text-decoration: none; color: inherit; }
 .cat-card:hover .cat-card__link svg { transform: translateX(4px); }
 
 /* ===== QUI SOM ===== */
-.qui-som { padding: 7rem 0; background: #052830; position: relative; overflow: hidden; }
+.qui-som {
+  padding: 7rem 0;
+  background: linear-gradient(160deg, #073d4a 0%, #052830 45%, #031e25 100%);
+  position: relative; overflow: hidden;
+}
 .qui-som::before {
   content: ''; position: absolute; top: -120px; right: -120px;
   width: 500px; height: 500px; border-radius: 50%;
