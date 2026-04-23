@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.bitanube.ad)",
+      "WebFetch(domain:bitanube.com)",
+      "Bash(unzip -l \"INTERPESCA_BRAND_VERSIONS_svg-20260414T090709Z-3-001.zip\")",
+      "Bash(unzip -p \"INTERPESCA_BRAND_VERSIONS_svg-20260414T090709Z-3-001.zip\" \"INTERPESCA_BRAND_VERSIONS_svg/INTERPESCA_BRAND_VERSIONS_BLANC_V.svg\")"
+    ]
+  }
+}
